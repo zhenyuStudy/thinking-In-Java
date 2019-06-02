@@ -50,6 +50,10 @@ public class TraverseMap {
 		}
 	}
 
+	public void useLambda() {
+		Map<Integer,Integer> map = new HashMap<Integer, Integer>();
+		map.forEach((k ,v) -> System.out.println("key =" + k+ ", value=" + v));
+	}
 	
 
 	/**
