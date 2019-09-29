@@ -11,7 +11,7 @@ public class WordCount {
             if (!wordsCount.containsKey(word)) {
                 wordsCount.put(word, 1);
             } else {
-                wordsCount.replace(word, wordsCount.get(word)+1);
+                wordsCount.put(word, wordsCount.get(word)+1);
             }
         }
         for (Map.Entry<String, Integer> entry : wordsCount.entrySet()) {
